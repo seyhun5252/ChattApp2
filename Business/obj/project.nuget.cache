@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IB8qpvogQlsVnXrEsr5jNnzktp/r4Apr5o9v/PqculGf1GJrO+dpNV+oj6BoDKtAz3DxdNDjCLzVsF02lukdqQ==",
+  "dgSpecHash": "ZTQBkSTpD5sEvhXKpbETMa9vGDhe3H98ZV8izrajcW3+Pij5JpHNAhVElIEr0jw6+7ot7bcFJYOd2iz3TTuM2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\SEYHUN\\Desktop\\novartz\\Projeler\\ChattApp\\Business\\Business.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\SEYHUN\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\SEYHUN\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
+    "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",
@@ -30,6 +32,7 @@
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\SEYHUN\\.nuget\\packages\\servicestack.interfaces\\6.3.0\\servicestack.interfaces.6.3.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",

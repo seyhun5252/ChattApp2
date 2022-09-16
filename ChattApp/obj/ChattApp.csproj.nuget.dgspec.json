@@ -50,6 +50,20 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.2.0, )"
+            },
+            "ServiceStack.Interfaces": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -103,9 +117,6 @@
               },
               "C:\\Users\\SEYHUN\\Desktop\\novartz\\Projeler\\ChattApp\\Common\\Common.csproj": {
                 "projectPath": "C:\\Users\\SEYHUN\\Desktop\\novartz\\Projeler\\ChattApp\\Common\\Common.csproj"
-              },
-              "C:\\Users\\SEYHUN\\Desktop\\novartz\\Projeler\\ChattApp\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "C:\\Users\\SEYHUN\\Desktop\\novartz\\Projeler\\ChattApp\\DataLayer\\DataLayer.csproj"
               }
             }
           }
@@ -123,6 +134,20 @@
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.8, )"
             },
@@ -193,6 +218,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

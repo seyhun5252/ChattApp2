@@ -1,36 +1,23 @@
-﻿using DataLayer.Entity;
+﻿using DataLayer.Abstract;
+using DataLayer.Abstract.Repository;
+using DataLayer.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class DalFriend
+    public class DalFriend : EfDalBase<Friend, ChatAppContext>, IFrinedDal
     {
         ChatAppContext chatAppContext = new ChatAppContext();
 
-        public void Add(Friend friend)
+        public List<Friend> GetPasFriend(Expression<Func<Friend, bool>> filter)
         {
-            chatAppContext.Add(friend);
-            chatAppContext.SaveChanges();
-        }
-        public void Delete(Friend friend)
-        {
-            chatAppContext.Remove(friend);
-            chatAppContext.SaveChanges();
-        }
-
-        public void Update(Friend friend)
-        {
-            chatAppContext.Update(friend);
-            chatAppContext.SaveChanges();
-        }
-
-        public List<Friend> GetList(int userID)
-        {
-            return chatAppContext.Set<Friend>().Where(x=>x.RequestedUserId == userID).ToList();
+            return chatAppContext.Friends.Where(filter).ToList();
         }
     }
 }

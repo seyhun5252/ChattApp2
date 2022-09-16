@@ -1,34 +1,36 @@
-﻿using DataLayer.Entity;
+﻿using DataLayer.Abstract;
+using DataLayer.Abstract.Repository;
+using DataLayer.Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class DalGroupMember
+    public class DalGroupMember : EfDalBase<GroupMember, ChatAppContext>, IGroupMemberDal
     {
         ChatAppContext chatAppContext = new ChatAppContext();
 
-        public void Add(GroupMember groupMember)
+        public GroupMember? groupMemberGet(int groupId)
         {
-            chatAppContext.Add(groupMember);
-            chatAppContext.SaveChanges();
+            return chatAppContext.Set<GroupMember>().SingleOrDefault(x=>x.GroupId == groupId);
+
         }
-        public void Update(GroupMember groupMember)
+
+        public GroupMember groupMemberUserAdmin(int GroupId , int? userId , int? addUserId)
         {
-            chatAppContext.Update(groupMember);
-            chatAppContext.SaveChanges();
-        }
-        public void Delete(GroupMember groupMember)
-        {
-            chatAppContext.Remove(groupMember);
-            chatAppContext.SaveChanges();
-        }
-        public List<GroupMember> GetAll(int groupID) 
-        {
-            return chatAppContext.Set<GroupMember>().Where(x => x.GroupId == groupID).ToList();
+            if (userId == null)
+            {
+                return chatAppContext.Set<GroupMember>().FirstOrDefault(x=>x.GroupId == GroupId
+                && x.AddedUserId == addUserId);
+
+            }
+            return chatAppContext.Set<GroupMember>().FirstOrDefault(x => x.GroupId == GroupId
+                && x.UserId == addUserId);
+
         }
     }
 }

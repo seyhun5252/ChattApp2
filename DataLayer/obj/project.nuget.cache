@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Fh5FI2/oxgmn+kDD8PRgB/F0uGmCT+UnEnxNDaIA/UUN4LPN9gFG8Sm7p12q/SpAP0doDe0W667tDfclGG2bLw==",
+  "dgSpecHash": "5QxF0ed3R5xeUP7ViJLbAOxW6lC2wI+fBnChiic8pNDFrKs38xIao3iM5zDRdzMO/a2hGb40ObCgXJu3jxkXcQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\SEYHUN\\Desktop\\novartz\\Projeler\\ChattApp\\DataLayer\\DataLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SEYHUN\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\SEYHUN\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

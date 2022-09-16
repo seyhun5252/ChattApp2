@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AeIh/3gme7bxtNE0jmR/OBHcLwixZdfTlSnhRnKB8g6CYxwZZn81RqfEsZG7RYWz6akPMWyELveox1K27q5hNQ==",
+  "dgSpecHash": "eEi6iElXZkp7ZvDab7eAhnfDoH2M0A1VfTaFRZjuzEvuRyy/gaOADyDtYCh93/anYQDXBGwJJ/gX7FixncyKcw==",
   "success": true,
   "projectFilePath": "C:\\Users\\SEYHUN\\Desktop\\novartz\\Projeler\\ChattApp\\Common\\Common.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\SEYHUN\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512"
+  ],
   "logs": []
 }

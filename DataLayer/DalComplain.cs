@@ -1,4 +1,6 @@
-﻿using DataLayer.Entity;
+﻿using DataLayer.Abstract;
+using DataLayer.Abstract.Repository;
+using DataLayer.Entity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,42 +11,19 @@ using System.Threading.Tasks;
 
 namespace DataLayer
 {
-    public class DalComplain
+    public class DalComplain: EfDalBase<Complain, ChatAppContext>  , IComplainDal
     {
         ChatAppContext chatAppContext = new ChatAppContext();
 
-        public void Add(Complain complain)
+
+        public List<Complain> GetComplainByUserId(int userId)
         {
-            chatAppContext.Add(complain);
-            chatAppContext.SaveChanges();
-        }
-        public void Delete(Complain complain)
-        {
-            chatAppContext.Remove(complain);
-            chatAppContext.SaveChanges();
+            return chatAppContext.Set<Complain>().Where(x => x.ComplainantUserId == userId).ToList();
         }
 
-        public void Update(Complain complain)
+        public object GetListAll(Expression<Func<User, bool>> filter)
         {
-            chatAppContext.Update(complain);
-            chatAppContext.SaveChanges();
+            throw new NotImplementedException();
         }
-
-        public List<Complain> GetListAll()
-        {
-            return chatAppContext.Set<Complain>().ToList();
-        }
-
-        public Complain? GetById(int id)
-        {
-
-         return chatAppContext.Set<Complain>().Find(id);
-        }
-
-        public List<Complain> GetComplainByUserID2(int id)
-        {
-            return chatAppContext.Set<Complain>().Where(x => x.ComplainantUserId == id).ToList();
-        }
-
     }
 }
