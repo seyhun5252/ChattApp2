@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer", "DataLayer\DataLayer.csproj", "{B98957F1-438E-4EF4-8D1E-4C1DDD890F74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatApp.WASM", "ChatApp.WASM\ChatApp.WASM.csproj", "{F54E5AF9-C2B4-4C2A-A9C1-EF0915A8ACEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatApp.WASM", "ChatApp.WASM\ChatApp.WASM.csproj", "{F54E5AF9-C2B4-4C2A-A9C1-EF0915A8ACEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
